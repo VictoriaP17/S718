@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<object-views xmlns="http://axelor.com/xml/ns/object-views"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/object-views http://axelor.com/xml/ns/object-views/object-views_6.1.xsd">
+
+  <form name="IotProductForm" title="IoT Integrated Product"
+    model="com.axelor.apps.stock.db.IotProduct">
+    <panel name="mainPanel" title="Product information">
+      <field name="macId" title="ID"/>
+      <field name="macAddress" title="MAC Address"/>
+      <field name="macDescription" title="Description"/>
+      <field name="macType"/>
+
+      <button name="btnSaveIotProduct" onClick="action-iot-product-method-save" title="Save"/>
+    </panel>
+  </form>
+
+  <!-- <grid name="IotProductsGrid" model="com.axelor.apps.stock.db.IotProduct" title="IoT Products">
+    <toolbar> <button name="btnNewIot" icon="fa-plus" onClick="iotProduct.form"/> </toolbar> <menubar> <menu
+    title="Actions"> <item title="Create IoT integrated product" action="iotProduct.form"/> </menu> </menubar>
+    <field name="id" title="ID"/> <field name="macAddress" title="MAC Address"/> <field name="macDescription"
+    title="Description"/> <field name="macType" title="Type"/> </grid> -->
+
+  <action-view title="IoT Product" name="iotProduct.form"
+    model="com.axelor.apps.stock.db.IotProduct">
+    <view type="form" name="IotProductForm"/>
+  </action-view>
+
+  <!-- <action-view title="IoT Products" name="iotProduct.grid" model="com.axelor.apps.stock.db.IotProduct">
+    <view type="grid" name="IotProductsGrid"/> </action-view> -->
+
+  <action-method name="action-iot-product-method-save">
+    <call class="com.axelor.apps.stock.web.IotProductController" method="saveIotProduct"/>
+  </action-method>
+
+  <menuitem name="menu-iotProduct" parent="stock-root" title="IoT Product"
+    action="iotProduct.form"/>
+
+</object-views>
