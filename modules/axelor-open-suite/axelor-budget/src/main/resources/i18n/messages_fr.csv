@@ -171,7 +171,6 @@
 "Represents the sum of ventilated invoices with an order.","Représente la somme des factures ventilées avec une commande.",,
 "Represents the sum of ventilated invoices with no order and daybook and accounted moves with no invoice.","Représente la somme des factures ventilées sans commande et des écritures en brouillard ou comptabilisées sans facture.",,
 "Represents the sum of ventilated invoices with no purchase order and daybook and accounted moves with no invoice.",,,
-"Root parent budget level","Budget parent racine",,
 "SO line",,,
 "SO lines",,,
 "Sale budget","Budget de recettes",,
