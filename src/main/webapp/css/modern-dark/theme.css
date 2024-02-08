@@ -1032,3 +1032,36 @@ text {
 .iti__country.iti__highlight {
 	background-color: #282828;
 }
+
+
+/* TESTS */
+.sidebar {
+    background-color: #1b1b1b;
+}
+
+.nav-tree > li.open, .nav-tree > li.active {
+    background-color: #1b1b1b;
+}
+
+.nav-tree li > a > .nav-icon {
+    padding: 4px 7px;
+    text-shadow: none;
+    text-align: center;
+    background: none!important;
+}
+
+.nav-tree ul li > a > .nav-icon {
+    padding: 0;
+    margin-top: 1px;
+    color: #d8dfe8!important;
+}
+
+.nav-tree li > a:hover, .nav-tree li.active > a {
+    color: #fff;
+    background-color: #1D1D1D;
+}
+
+.nav-tree > li.open {
+    border-left: 4px solid #5A6FE4!important;
+    transition: all .35s ease;
+}
